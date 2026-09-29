@@ -1,38 +1,50 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition:
+    border-color 0.25s,
+    outline 0.25s;
+  color: inherit;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-list-container {
+  height: 50vh;
+  overflow-y: scroll;
+  min-width: 100%;
+}
+.highlight {
+  color: #0056b3;
+}
+
+.contact-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-card .contact-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-card .contact-info {
+  text-align: left;
 }
